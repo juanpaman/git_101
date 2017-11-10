@@ -71,7 +71,7 @@ public class Calculator {
     }
     
     private int daysBetween(Date d1, Date d2){
-        return (int)( (d2.getTime() - d1.getTime()) / (1000 * 60000 * 60 * 24));
+        return (int)( (d2.getTime() - d1.getTime()) / (1000 * 60000 * 60 * 1440));
     }
     
     protected class HolidayComparator implements Comparator<Holiday> {
